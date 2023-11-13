@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <style>
+        h1{
+            color: purple;
+            font-size: 50px;
+        }
+        td{
+            font-size: 50px;
+            height: 100px;
+            width: 100px;
+            border: 1px solid green;
+            text-align: center;
+            padding: 0  ;
+        
+        }
+        td:hover { 
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo da Celha</h1>
+    <table>
+        <tr> 
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+        </tr>
+        <tr> 
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+        </tr>
+        <tr> 
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+            <td onclick="pontuar(this, 'cachorroquente' , 'computador')"></td>
+        </tr>
+        
+    </table>
+    <script>
+       var jogador = "X"
+       function pontuar(td, numero1, numero2) {
+            td.innerHTML = numero1 + numero2
+        console.log(numero2 + " " + numero1)
+        }
+
+
+    </script>
+</body>
+</html>
