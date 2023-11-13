@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da velha</title>
+    <style>
+        h1{
+            color: purple;
+            font-size: 50px;
+        }
+        td{
+            font-size: 40px;
+            height: 50px;
+            width: 50px;
+            border: 1px solid green;
+            text-align: center;
+        
+        }
+        td:hover { 
+            background-color: aqua;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Jogo da Celha</h1>
+    <table>
+        <tr> 
+            <td onclick="pontuar(this)"></td>
+            <td onclick="pontuar(this)"></td>
+            <td onclick="pontuar(this)"></td>
+        </tr>
+        <tr> 
+            <td onclick="pontuar(this)"></td>
+            <td onclick="pontuar(this)"></td>
+            <td onclick="pontuar(this)"></td>
+        </tr>
+        <tr> 
+            <td onclick="pontuar(this)"></td>
+            <td onclick="pontuar(this)"></td>
+            <td onclick="pontuar(this)"></td>
+        </tr>
+        
+    </table>
+    <script>
+       var jogador = "X"
+       function pontuar(td) {
+            if(td.innerHTML != "") return
+            td.innerHTML = jogador
+            if(jogador == "X"){ 
+                jogador = "O"
+            } else { 
+                jogador = "X"
+            }
+        
+    
+        }
+
+
+    </script>
+</body>
+</html>
